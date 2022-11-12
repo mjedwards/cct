@@ -1,5 +1,5 @@
 ---
-import '../styles/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "About Me";
 const identity = {
 	firstName: "Sarah",
@@ -37,11 +37,8 @@ const textCase = "uppercase";
 		</style>
 	</head>
 	<body>
-		<a href='/'>Home</a>
-		<a href='/about/'>About</a>
-		<a href='/blog/'>Blog</a>
-		<h1>{pageTitle}</h1>
-		<h2>... and my new Astro site!</h2>
+		<BaseLayout pageTitle={pageTitle}>
+            <h2>... and my new Astro site!</h2>
 
 		<p>
 			I am working through Astro's introductory tutorial. This is the second
@@ -82,5 +79,9 @@ const textCase = "uppercase";
 				<p>My goal is not 3 days.</p>
 			)
 		}
+        </BaseLayout>
+        <script>
+			import "../scripts/menu.js";
+		</script>
 	</body>
 </html>
