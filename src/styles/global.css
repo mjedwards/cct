@@ -75,7 +75,16 @@ a:focus {
 		padding: 15px 20px;
 	}
 
-  .hamburger {
-    display: none;
-  }
+	.hamburger {
+		display: none;
+	}
+}
+
+.dark body {
+	background-color: #0d0950;
+	color: #fff;
+}
+
+.dark .nav-links a {
+	color: #fff;
 }
